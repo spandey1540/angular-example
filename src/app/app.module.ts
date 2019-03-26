@@ -10,6 +10,10 @@ import { FooterComponent } from './component/footer/footer.component';
 import { HomeComponent } from './component/home/home.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { ForbiddenNameDirective } from './directives/forbidden-name.directive';
+import { FileuploadComponent } from './fileupload/fileupload.component';
+
+import { HttpClient } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -19,12 +23,14 @@ import { ForbiddenNameDirective } from './directives/forbidden-name.directive';
     FooterComponent,
     HomeComponent,
     ContactComponent,
-    ForbiddenNameDirective
+    ForbiddenNameDirective,
+    FileuploadComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClient
   ],
   providers: [],
   bootstrap: [AppComponent]
